@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(198, 202, 207);
+    position: relative;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert-box{
+    position: absolute;
+    top: 10px;
+    height: 100px;
+    width: 250px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.stp-alarm{
+    cursor: pointer;
+    width: 70px;
+    height: 25px;
+}
+
+.del-alarm{
+    margin-left: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+}
+
+.current-time{
+    position: absolute;
+    top: 2%;
+    left: 31%;
+    font-size: 3em;
+    background-color: rgb(245, 204, 245);
+    color: rgb(165, 93, 93);
+    border:  solid rgb(117, 106, 106);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.current-time:hover{
+    background-color: black;
+    color: white;
+}
+
+#alarm-clock-text{
+    text-align: center;
+    position: absolute;
+    font-size: 2em;
+    top: 35%;
+    left:  42%;
+    background-color: beige;
+    padding: 0.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#alarm-clock-text:hover{
+    background-color: black;
+    color: beige;
+}
+
+.curr-time{
+    text-align: center;
+}
+
+#time{
+    height: 30px;
+    width: 70px;
+}
+
+.btn{
+    width: 5em;
+    height: 2em;
+}
+
+@media screen and (max-width:556px){
+    .current-time{
+        left: 20%;
+    }
+    #alarm-clock-text{
+        left: 35%;
+    }
+}
+
+@media screen and (max-width:411px){
+    .current-time{
+        left: 6%;
+    }
+    #alarm-clock-text{
+        left: 25%;
+    }
+}
+
+@media screen and (max-width:360px){
+    .current-time{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width:320px){
+    .current-time{
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width:290px){
+    .current-time{
+        font-size: 1.4em;
+        left: 9%;
+    }
+    #alarm-clock-text{
+        left: 15%;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width:265px){
+    .current-time{
+        font-size: 1.2em;
+    }
+    #alarm-clock-text{
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width:225px){
+    .current-time{
+        font-size: 1em;
+    }
+    #alarm-clock-text{
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width:190px){
+    .current-time{
+        font-size: 0.7em;
+    }
+    #alarm-clock-text{
+        font-size: 1.2em;
+    }
+}
+
